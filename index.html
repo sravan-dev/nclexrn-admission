@@ -1,0 +1,2671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Next Generation NCLEX-RN Coaching in Kerala | Online & Offline | Tijus
+    Academy
+  </title>
+  <style>
+    @font-face {
+      font-family: "Montserrat";
+      src: url(https://d38kaxddcm0a82.cloudfront.net/montserrat/montserrat-400.woff2) format("woff2");
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Montserrat";
+      src: url(https://d38kaxddcm0a82.cloudfront.net/montserrat/montserrat-700.woff2) format("woff2");
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "GT Sectra Fine";
+      src: url(https://d38kaxddcm0a82.cloudfront.net/gtsectrafine/gtsectrafine-700.woff2) format("woff2");
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    :root {
+      --primary: #039;
+      --primary-dark: #001a4d;
+      --secondary: #4267b2;
+      --accent: #0073b1;
+      --text: #333;
+      --gray-bg: #f4f4f4;
+      --white: #fff;
+      --border: #e5e5e5;
+      --muted: #b1bac2;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 56px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "GT Sectra Fine", Georgia, serif;
+      font-weight: 700;
+    }
+
+    b,
+    strong,
+    .btn {
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .ribbon {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .ribbon a {
+      color: var(--white);
+      text-decoration: underline;
+      margin-left: 6px;
+    }
+
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    }
+
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logos img {
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .logo-divider {
+      width: 1px;
+      height: 48px;
+      background: var(--border);
+    }
+
+    .btn-dl {
+      background: var(--primary);
+      color: var(--white);
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+      font-family: "Montserrat", Arial, sans-serif;
+      transition: background 0.2s;
+    }
+
+    .btn-dl:hover {
+      background: var(--primary-dark);
+      color: var(--white);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 540px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url("hero.jpeg") center top/cover no-repeat;
+    }
+
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg,
+          rgba(0, 0, 0, 0.72) 0%,
+          rgba(0, 0, 0, 0.45) 55%,
+          rgba(0, 0, 0, 0.12) 100%);
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 40px;
+      align-items: start;
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero-content {
+      align-self: center;
+    }
+
+    .hero-content p.subtitle {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 14px;
+      margin-bottom: 22px;
+      max-width: 440px;
+    }
+
+    .hero-bullets {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 16px;
+      margin-top: 4px;
+    }
+
+    .hero-bullets li {
+      color: var(--white);
+      font-size: 13px;
+      padding: 5px 0 5px 20px;
+      position: relative;
+      line-height: 1.45;
+    }
+
+    .hero-bullets li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+      color: #7ec8e3;
+    }
+
+    .stats-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .stats-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    .stat-item {
+      flex: 1;
+      min-width: 180px;
+      padding: 14px 20px;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 3px;
+    }
+
+    .stat-value {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .stat-value .old-price {
+      font-size: 12px;
+      color: #999;
+      text-decoration: line-through;
+      font-weight: 400;
+      margin-right: 4px;
+    }
+
+    .stat-value small {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: #777;
+      margin-top: 2px;
+    }
+
+    .lead-form-box {
+      background: var(--white);
+      border-radius: 6px;
+      padding: 22px 20px;
+      box-shadow: 0 4px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .lead-form-box h2 {
+      font-family: "GT Sectra Fine", Georgia, serif;
+      font-size: 1.15rem;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .form-field {
+      margin-bottom: 6px;
+    }
+
+    .form-field input,
+    .form-field select {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-family: "Montserrat", Arial, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      outline: none;
+      transition: border-color 0.2s;
+      height: 38px;
+    }
+
+    .form-field input::placeholder {
+      color: #aaa;
+    }
+
+    .form-field input:focus,
+    .form-field select:focus {
+      border-color: var(--primary);
+    }
+
+    .form-consent {
+      font-size: 10px;
+      color: #666;
+      line-height: 1.4;
+      margin: 6px 0 10px;
+    }
+
+    .form-consent a {
+      color: var(--accent);
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 4px;
+      padding: 11px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: "Montserrat", Arial, sans-serif;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover {
+      background: var(--primary-dark);
+    }
+
+    .promo-bar {
+      background: var(--primary);
+      color: var(--white);
+      padding: 16px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .promo-bar strong {
+      font-size: 14px;
+    }
+
+    .section {
+      padding: 52px 0;
+    }
+
+    .section-gray {
+      background: var(--gray-bg);
+    }
+
+    .section-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .section-title {
+      font-family: "GT Sectra Fine", Georgia, serif;
+      font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    .section-primary .section-title {
+      color: var(--white);
+    }
+
+    .prose {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .ul-check {
+      list-style: none;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .ul-check li {
+      font-size: 14px;
+      line-height: 1.7;
+      padding: 5px 0 5px 32px;
+      position: relative;
+    }
+
+    .ul-check li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      color: var(--primary);
+      font-weight: 700;
+      border: 1.5px solid var(--primary);
+      border-radius: 4px;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .ul-check li+li {
+      margin-top: 2px;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+      font-family: "Montserrat", Arial, sans-serif;
+      transition: background 0.2s;
+    }
+
+    .btn-cta:hover {
+      background: var(--primary-dark);
+      color: var(--white);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .snapshot-box {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .snapshot-box p {
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .testimonials-grid {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
+    .t-card {
+      flex: 1;
+      min-width: 260px;
+      max-width: 480px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 24px 20px;
+    }
+
+    .t-quote {
+      text-align: center;
+      font-size: 2.2rem;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .t-text {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.7;
+      text-align: center;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .t-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .t-author img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .t-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .t-role,
+    .t-company {
+      font-size: 12px;
+      color: #777;
+    }
+
+    .table-outer {
+      overflow-x: auto;
+      margin-top: 12px;
+    }
+
+    .cmp-table {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .cmp-table thead tr {
+      display: flex;
+    }
+
+    .cmp-table thead th {
+      flex: 1;
+      padding: 13px 16px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--white);
+      background: var(--primary);
+    }
+
+    .cmp-table thead th:first-child {
+      background: var(--white);
+      color: var(--text);
+    }
+
+    .cmp-table thead th.col3 {
+      background: var(--secondary);
+    }
+
+    .cmp-table tbody tr {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cmp-table tbody td {
+      flex: 1;
+      padding: 14px 16px;
+      background: var(--gray-bg);
+      vertical-align: top;
+      line-height: 1.65;
+    }
+
+    .cmp-table tbody td:first-child {
+      background: var(--white);
+      font-weight: 700;
+    }
+
+    .cmp-table tbody td ul {
+      padding-left: 16px;
+    }
+
+    .cmp-table tbody td ul li {
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+
+    .highlights-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px 36px;
+      margin-top: 36px;
+    }
+
+    .hl-item {
+      width: 170px;
+      text-align: center;
+    }
+
+    .hl-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .hl-item p {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .note-text {
+      font-size: 12px;
+      color: #666;
+      font-style: italic;
+      margin-top: 22px;
+      text-align: left;
+    }
+
+    .faculty-row {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .faculty-row img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .fac-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .fac-title {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .fac-bio {
+      font-size: 13px;
+      line-height: 1.75;
+      color: var(--text);
+    }
+
+    .btn-link {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 13px;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 8px;
+      display: inline-block;
+    }
+
+    .acc-list {
+      max-width: 760px;
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+    }
+
+    .acc-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .acc-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 15px 0;
+      cursor: pointer;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      text-align: left;
+    }
+
+    .acc-btn:hover {
+      color: var(--primary);
+    }
+
+    .cnt-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: rgba(66, 103, 178, 0.1);
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .acc-arrow {
+      margin-left: auto;
+      color: #aaa;
+      font-size: 16px;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+    }
+
+    .acc-btn.open .acc-arrow {
+      transform: rotate(180deg);
+    }
+
+    .acc-body {
+      display: none;
+      padding: 12px 14px 14px 36px;
+      background: var(--gray-bg);
+    }
+
+    .acc-body.open {
+      display: block;
+    }
+
+    .acc-body ul {
+      padding-left: 18px;
+    }
+
+    .acc-body ul li {
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 4px;
+    }
+
+    .acc-body p {
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .cert-wrap {
+      display: flex;
+      gap: 44px;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .cert-img {
+      max-width: 400px;
+      width: 100%;
+      border: 2px solid #003366;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .cert-title {
+      font-family: "GT Sectra Fine", Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .cert-text p {
+      font-size: 13px;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .cert-note {
+      font-size: 11px;
+      color: #888;
+      font-style: italic;
+    }
+
+    .takeaways {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .takeaways li {
+      display: flex;
+      gap: 10px;
+      font-size: 13px;
+      line-height: 1.65;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .takeaways li:last-child {
+      border-bottom: none;
+    }
+
+    .takeaways li::before {
+      content: "✓";
+      color: var(--primary);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .learning-row {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .learn-item {
+      flex: 1;
+      min-width: 220px;
+      max-width: 320px;
+    }
+
+    .learn-item img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .learn-item h4 {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .learn-item ul {
+      padding-left: 18px;
+    }
+
+    .learn-item ul li {
+      font-size: 13px;
+      line-height: 1.65;
+      margin-bottom: 4px;
+    }
+
+    .apply-banner {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 56px 20px;
+    }
+
+    .apply-banner h2 {
+      font-family: "GT Sectra Fine", Georgia, serif;
+      font-size: 1.75rem;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .apply-banner p {
+      font-size: 14px;
+      opacity: 0.9;
+      margin-bottom: 4px;
+    }
+
+    .apply-banner .starts {
+      margin: 16px 0 22px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-rev {
+      display: inline-block;
+      border: 2px solid var(--white);
+      color: var(--white);
+      background: transparent;
+      padding: 12px 32px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: "Montserrat", Arial, sans-serif;
+      transition:
+        background 0.2s,
+        color 0.2s;
+    }
+
+    .btn-rev:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    footer {
+      background: var(--gray-bg);
+      padding: 22px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    footer .container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer img {
+      height: 38px;
+      object-fit: contain;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    .sticky-dl {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--primary);
+      padding: 11px 16px;
+      z-index: 200;
+      text-align: center;
+    }
+
+    .sticky-dl button {
+      background: var(--white);
+      color: var(--primary);
+      border: none;
+      border-radius: 4px;
+      padding: 10px 28px;
+      font-weight: 700;
+      font-size: 13px;
+      font-family: "Montserrat", Arial, sans-serif;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+    }
+
+    .popup-overlay {
+      display: flex;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 300;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .popup-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .popup-box {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 28px 24px;
+      width: 100%;
+      max-width: 420px;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+      margin: 16px;
+      transform: translateY(30px) scale(0.95);
+      opacity: 0;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    }
+
+    .popup-overlay.active .popup-box {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: #666;
+      cursor: pointer;
+      line-height: 1;
+      font-family: Arial, sans-serif;
+    }
+
+    .popup-close:hover {
+      color: #333;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 101;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--primary);
+      border-radius: 2px;
+      transition:
+        transform 0.3s,
+        opacity 0.3s;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--white);
+      z-index: 99;
+      flex-direction: column;
+      padding: 80px 24px 24px;
+      gap: 0;
+    }
+
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+
+    .mobile-nav a:hover {
+      color: var(--primary);
+    }
+
+    .mobile-nav .btn-dl {
+      margin-top: 16px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .lead-form-box {
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .hero-bullets {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-wrap {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .faculty-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .site-header {
+        padding: 10px 0;
+      }
+
+      .site-header .container {
+        flex-wrap: nowrap;
+        gap: 10px;
+      }
+
+      .logos {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .logos img {
+        height: 40px;
+      }
+
+      .logo-divider {
+        display: none;
+      }
+
+      .btn-dl.desktop-only {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-bg {
+        background-position: 70% center;
+        background-size: cover;
+      }
+
+      .hero-bg::after {
+        background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.6) 40%,
+            rgba(0, 0, 0, 0.75) 100%);
+      }
+
+      .hero .container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+
+      .hero-content h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero-bullets {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-item {
+        min-width: 140px;
+        padding: 12px 14px;
+      }
+
+      .section {
+        padding: 36px 0;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+
+      .highlights-flex {
+        gap: 20px 24px;
+      }
+
+      .hl-item {
+        width: calc(50% - 12px);
+      }
+
+      .testimonials-grid {
+        flex-direction: column;
+      }
+
+      .t-card {
+        min-width: unset;
+        max-width: 100%;
+      }
+
+      .faculty-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .cert-wrap {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cert-img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .site-header {
+        padding: 10px 0;
+      }
+
+      .site-header .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .logos img {
+        height: 34px;
+      }
+
+      .ribbon {
+        font-size: 11px;
+        padding: 8px 12px;
+      }
+
+      .hero-content h1 {
+        font-size: 1.3rem;
+      }
+
+      .hero .container {
+        padding-top: 28px;
+        padding-bottom: 28px;
+      }
+
+      .hero-bullets {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-bar .container {
+        flex-direction: column;
+      }
+
+      .stat-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .stat-item:last-child {
+        border-bottom: none;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .lead-form-box {
+        padding: 18px 14px;
+      }
+
+      .section {
+        padding: 28px 0;
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+      }
+
+      .container {
+        padding: 0 14px;
+      }
+
+      .acc-btn {
+        font-size: 12px;
+        gap: 6px;
+      }
+
+      .acc-btn .acc-arrow {
+        flex-shrink: 0;
+      }
+
+      .acc-list {
+        overflow: hidden;
+      }
+
+      .cmp-table thead tr,
+      .cmp-table tbody tr {
+        flex-direction: column;
+      }
+
+      .cmp-table thead th,
+      .cmp-table tbody td {
+        padding: 10px 12px;
+      }
+
+      .highlights-flex {
+        gap: 16px;
+      }
+
+      .hl-item {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        text-align: left;
+      }
+
+      .hl-item img {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        margin-bottom: 0;
+      }
+
+      .learning-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .learn-item {
+        max-width: 100%;
+        min-width: unset;
+      }
+
+      .apply-banner {
+        padding: 36px 16px;
+      }
+
+      .apply-banner h2 {
+        font-size: 1.3rem;
+      }
+
+      .table-outer {
+        border-radius: 4px;
+      }
+
+      .promo-bar {
+        font-size: 12px;
+        padding: 12px 14px;
+      }
+
+      .promo-bar strong {
+        display: block;
+      }
+
+      .sticky-dl {
+        padding: 9px 12px;
+      }
+
+      .sticky-dl button {
+        padding: 9px 20px;
+        font-size: 12px;
+      }
+
+      footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .takeaways li {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="https://tijusacademy.com/cdn-cgi/content?id=.R3lxLIBI.YTBqB1Msl2k.G2ft.nHRGgpZw_Q0eZCP0-1776941703.7249775-1.0.1.1-kScSrWLo.yT3W99vPFwjvR06a9Nw0hdUv1RHxVcBqG4"
+    aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+
+  <!-- Ribbon -->
+  <aside class="ribbon">
+    Next Generation NCLEX-RN Coaching in Kerala
+  </aside>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logos">
+        <img src="Learning.png" alt="Tiju's Academy" style="height: 90px; object-fit: contain" />
+      </div>
+      <div class="header-right">
+        <a href="javascript:void(0)" class="btn-dl desktop-only" onclick="openPopup()">GET FREE GUIDE</a>
+        <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#brochure" onclick="toggleMenu()">Programme Overview</a>
+    <a href="#brochure" onclick="toggleMenu()">Curriculum</a>
+    <a href="#brochure" onclick="toggleMenu()">Faculty</a>
+    <a href="#brochure" onclick="toggleMenu()">Certificate</a>
+    <a href="#brochure" onclick="toggleMenu()">FAQs</a>
+    <a href="javascript:void(0)" class="btn-dl" onclick="
+          toggleMenu();
+          openPopup();
+        ">GET FREE GUIDE</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Be a Registered Nurse in America at the Earliest!</h1>
+        <p class="subtitle">
+          <strong>Kerala's #1 coaching for the Next Generation NCLEX (NGN).</strong>
+        </p>
+        <ul class="hero-bullets">
+          <li>Discover the hidden pattern behind NGN-style questions.</li>
+          <li>Balance your study around your busy hospital shifts.</li>
+          <li>Get direct mentorship from experts who know the path.</li>
+          <li>
+            Gain access to your personal CAT-style success portal for one full
+            year.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Lead Form -->
+      <div class="lead-form-box" id="brochure">
+        <h2>Get Your Free Guide</h2>
+        <div class="form-row">
+          <div class="form-field">
+            <label style="
+                  font-size: 11px;
+                  font-weight: 700;
+                  color: var(--text);
+                  display: block;
+                  margin-bottom: 3px;
+                ">First Name</label><input type="text" placeholder="e.g., Adam" />
+          </div>
+          <div class="form-field">
+            <label style="
+                  font-size: 11px;
+                  font-weight: 700;
+                  color: var(--text);
+                  display: block;
+                  margin-bottom: 3px;
+                ">Last Name</label><input type="text" placeholder="e.g., John" />
+          </div>
+        </div>
+        <label style="
+              font-size: 11px;
+              font-weight: 700;
+              color: var(--text);
+              display: block;
+              margin-bottom: 3px;
+            ">Phone Number</label>
+        <div class="form-row">
+          <div class="form-field">
+            <select>
+              <option value="+91" selected>🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+65">🇸🇬 +65</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <input type="tel" placeholder="Phone Number" />
+          </div>
+        </div>
+        <div class="form-field">
+          <label style="
+                font-size: 11px;
+                font-weight: 700;
+                color: var(--text);
+                display: block;
+                margin-bottom: 3px;
+              ">Email Address</label><input type="email" placeholder="e.g., name@email.com" />
+        </div>
+        <div class="form-field">
+          <label style="
+                font-size: 11px;
+                font-weight: 700;
+                color: var(--text);
+                display: block;
+                margin-bottom: 3px;
+              ">Current City</label><input type="text" placeholder="e.g., Kochi" />
+        </div>
+        <div class="form-field">
+          <label style="
+                font-size: 11px;
+                font-weight: 700;
+                color: var(--text);
+                display: block;
+                margin-bottom: 3px;
+              ">Best Time to Talk</label>
+          <select>
+            <option value="">- Select -</option>
+            <option>Morning (09–12)</option>
+            <option>Afternoon (12–4)</option>
+            <option>Evening (4–6)</option>
+            <option>Anytime</option>
+          </select>
+        </div>
+        <p class="form-consent">
+          <!-- By clicking the button below, you agree to receive communications
+            via Email/Call/WhatsApp/SMS from IIM Kozhikode &amp;
+            <a href="#">Emeritus</a> about this programme and other relevant
+            programs. <a href="#">Privacy Policy</a> -->
+        </p>
+        <button class="btn-submit" onclick="downloadGuide()">GET FREE GUIDE</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programme Stats Bar -->
+  <!-- <div class="stats-bar">
+    <div class="container">
+      <div class="stat-item">
+        <div class="stat-label">Programme Start</div>
+        <div class="stat-value">June 30, 2026</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">Duration</div>
+        <div class="stat-value">
+          12 Weeks
+          <small>4-6 hours of learner effort/week</small>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">Programme Fee</div>
+        <div class="stat-value">
+          <span class="old-price">₹24,999</span>₹1,18,655
+          <small>Can be charged at checkout. Flexible Payment Options
+            Available</small>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">Eligibility</div>
+        <div class="stat-value">
+          Minimum Graduate or Diploma Holder (10+2+3) in any discipline
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Promo bar -->
+  <div class="promo-bar">
+    <strong>Early Bird Registration Benefit</strong> — Enrol before the
+    deadline to get an exclusive enrolment benefit.
+    <strong>Upcoming Deadline: 15 May 2026</strong>
+  </div>
+
+  <!-- Programme Overview -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Programme Overview</h2>
+      <p class="prose">
+        You don't have to limit your dreams to just one place. Discover how
+        one license can change your life forever. When you pass the NCLEX-RN,
+        you unlock the door to
+        <strong>America, Canada, and Australia.</strong>
+      </p>
+      <p class="prose" style="margin-top: 16px">
+        Discover the secret to a career without borders. This isn't just about
+        a test; it's about your freedom to choose where you want to live and
+        work. Whether you want the fast pace of the US, the beauty of Canada,
+        or the lifestyle of Australia, you'll get there with this roadmap.
+      </p>
+      <p class="prose" style="margin-top: 16px">
+        You will master the NGN mindset and gain the confidence to walk into
+        any exam hall. Stop dreaming about a global career and discover how to
+        start living it. You deserve a future that rewards your hard work with
+        the best life for you and your family.
+      </p>
+    </div>
+  </section>
+  <!-- Who is this for -->
+  <section class="section section-gray">
+    <style>
+      .journey-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .journey-item {
+        text-align: center;
+        padding: 30px 24px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 51, 102, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+
+      .journey-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0, 51, 102, 0.12);
+        border-color: rgba(0, 51, 102, 0.2);
+      }
+
+      .journey-icon {
+        height: 56px;
+        width: 56px;
+        color: #003b73;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .journey-item:hover .journey-icon {
+        transform: scale(1.1);
+      }
+
+      .journey-title {
+        color: #003366;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        font-family: "GT Sectra Fine", Georgia, serif;
+        line-height: 1.3;
+      }
+
+      .journey-desc {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 991px) {
+        .journey-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 24px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .journey-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+      }
+    </style>
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 10px;">Who is this Journey for?</h2>
+      <p class="prose"
+        style="margin-bottom: 18px; text-align: center; font-size: 16px; font-weight: 600; max-width: 100%;">
+        This program is for nurses ready to move beyond local boundaries and start a career that is recognized in
+        <strong>America, Canada, and Australia</strong>.
+      </p>
+
+      <div class="journey-grid">
+        <div class="journey-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="journey-icon">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+          </svg>
+          <div class="journey-title">Students &amp; Recent Graduates:</div>
+          <div class="journey-desc">You don't have to wait. Start mastering the NGN mindset now so you can secure your
+            global license the moment you finish your degree.</div>
+        </div>
+        <div class="journey-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="journey-icon">
+            <path
+              d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+            <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" />
+            <circle cx="20" cy="10" r="2" />
+          </svg>
+          <div class="journey-title">Working RNs &amp; GNM Nurses:</div>
+          <div class="journey-desc">You already have the experience. We help you translate those skills into a US,
+            Canadian, or Australian nursing license for better pay and a better life.</div>
+        </div>
+        <div class="journey-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="journey-icon">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+          <div class="journey-title">Those Taking the Exam Again:</div>
+          <div class="journey-desc">If you didn't pass the first time, don't lose heart. We use a simplified,
+            human-powered approach to help you regain your confidence and master those tough judgment questions.</div>
+        </div>
+        <div class="journey-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="journey-icon">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+          <div class="journey-title">Nurses Seeking a Better Life:</div>
+          <div class="journey-desc">If you believe your hard work deserves a world-class platform and a higher standard
+            of living, this roadmap is built specifically for you.</div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="javascript:void(0)" class="btn-cta" onclick="openPopup()"
+          style="background-color: #003366; padding: 14px 32px; text-transform: uppercase;">GET YOUR FREE GUIDE</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Reviews Snapshot -->
+  <!-- <section class="section section-gray">
+    <div class="container">
+      <h2 class="section-title">
+        Reviews in a Snapshot for the IIM Kozhikode EPIS Course
+      </h2>
+      <div class="snapshot-box">
+        <p>
+          The
+          <em>Executive Presence, Influence, and Storytelling Programme</em>
+          from IIM Kozhikode is described by participants as a
+          <strong>transformative, practical learning experience</strong>
+          designed for professionals in leadership, management, or
+          client-facing roles. Learners highlight that the programme helps
+          them
+          <strong>communicate with more clarity, authenticity, and
+            confidence</strong>, supported by structured communication frameworks and real-world
+          application.
+        </p>
+        <p>
+          Many participants note that the
+          <strong>peer learning environment</strong> and the guidance from
+          faculty, particularly <strong>Prof. Deepa Sethi</strong>, contribute
+          significantly to improving
+          <strong>storytelling, influencing skills, and personal leadership
+            presence</strong>. Several learners report applying these skills
+          <strong>directly in their work</strong>, improving interactions with
+          teams and stakeholders.
+        </p>
+        <p>Participants commonly mention:</p>
+        <ul class="ul-check" style="margin-top: 10px">
+          <li>
+            Stronger <strong>executive presence</strong> and more confident
+            communication
+          </li>
+          <li>
+            Ability to <strong>structure ideas and arguments clearly</strong>
+          </li>
+          <li>
+            Improved
+            <strong>storytelling for leadership and stakeholder influence</strong>
+          </li>
+          <li>
+            Insights into how to
+            <strong>build meaningful professional networks</strong>
+          </li>
+          <li>
+            A supportive peer cohort with
+            <strong>collaborative learning</strong>
+          </li>
+          <li>
+            Practical frameworks that can be
+            <strong>used immediately at work</strong>
+          </li>
+        </ul>
+        <p style="margin-top: 14px">
+          Overall, the programme is viewed as
+          <strong>highly impactful</strong> for professionals aiming to
+          strengthen
+          <strong>leadership communication, storytelling, and influence</strong>
+          in a structured, practical format.
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">
+        What Nurses Say About Tiju's Learning
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-bottom: 48px; max-width: 1000px; margin-left: auto; margin-right: auto;">
+        <iframe width="100%" style="aspect-ratio: 9/16; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);" src="https://www.youtube.com/embed/ExVpxjWn7iI?si=L3w-WYm8ZdeGsli1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" style="aspect-ratio: 9/16; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);" src="https://www.youtube.com/embed/_50tKSbAebE?si=qy4S8ASAdCZPIZfq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" style="aspect-ratio: 9/16; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);" src="https://www.youtube.com/embed/KGoURrQGhLI?si=oYxQufAH-KIcdJh5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" style="aspect-ratio: 9/16; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);" src="https://www.youtube.com/embed/xsCT6HksRu4?si=Kc3UKOlqswcTAtFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="testimonials-grid">
+        <div class="t-card" style="display: flex; flex-direction: column; align-items: center; border: 1px solid #e5e7eb; border-radius: 6px; padding: 32px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); height: 100%;">
+          <div style="color: #1e3a8a; margin-bottom: 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="2" x2="8" y2="22"></line>
+              <line x1="16" y1="2" x2="16" y2="22"></line>
+            </svg>
+          </div>
+          <p class="t-text" style="text-align: center; font-weight: 600; color: #374151; font-size: 14px; line-height: 1.7; margin-bottom: 32px;">
+            "I recently completed my NCLEX review with Tijus Academy and was taught by Mrs. Anjali. I found the classes
+            to be extremely helpful and informative. Mrs. Anjali's teaching style is engaging and easy to understand,
+            making complex topics more manageable. The study materials provided were comprehensive and relevant to the
+            exam. I appreciated the practice questions and mock exams that helped me assess my knowledge and prepare for
+            the actual test. Overall, I highly recommend Tijus Academy and Mrs. Anjali for NCLEX preparation."
+          </p>
+          <div class="t-author" style="display: flex; align-items: center; width: 100%; margin-top: auto;">
+            <img src="https://ui-avatars.com/api/?name=vineeth+v&background=e0245e&color=fff&size=56" alt="vineeth v" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; margin-right: 16px;" />
+            <div style="text-align: left;">
+              <div class="t-name" style="font-size: 15px; font-weight: 700; color: #111827;">Vineeth V</div>
+              <div style="font-size: 13px; color: #6b7280; margin-top: 2px;">NCLEX RN Aspirant</div>
+            </div>
+          </div>
+        </div>
+        <div class="t-card" style="display: flex; flex-direction: column; align-items: center; border: 1px solid #e5e7eb; border-radius: 6px; padding: 32px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); height: 100%;">
+          <div style="color: #1e3a8a; margin-bottom: 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="2" x2="8" y2="22"></line>
+              <line x1="16" y1="2" x2="16" y2="22"></line>
+            </svg>
+          </div>
+          <p class="t-text" style="text-align: center; font-weight: 600; color: #374151; font-size: 14px; line-height: 1.7; margin-bottom: 32px;">
+            "I would like to thank Tijus Academy for their unwavering support and guidance throughout my NCLEX RN
+            preparation. My individual tutor, Anjali, was extremely helpful and encouraging. Classes are well-planned
+            and organized. I am very grateful to be a part of Tijus Academy."
+          </p>
+          <div class="t-author" style="display: flex; align-items: center; width: 100%; margin-top: auto;">
+            <img src="https://ui-avatars.com/api/?name=Chitra+Josephina&background=004d40&color=fff&size=56"
+              alt="Chitra Josephina" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; margin-right: 16px;" />
+            <div style="text-align: left;">
+              <div class="t-name" style="font-size: 15px; font-weight: 700; color: #111827;">Chitra Josephina</div>
+              <div style="font-size: 13px; color: #6b7280; margin-top: 2px;">NCLEX RN Aspirant</div>
+            </div>
+          </div>
+        </div>
+        <div class="t-card" style="display: flex; flex-direction: column; align-items: center; border: 1px solid #e5e7eb; border-radius: 6px; padding: 32px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); height: 100%;">
+          <div style="color: #1e3a8a; margin-bottom: 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="2" x2="8" y2="22"></line>
+              <line x1="16" y1="2" x2="16" y2="22"></line>
+            </svg>
+          </div>
+          <p class="t-text" style="text-align: center; font-weight: 600; color: #374151; font-size: 14px; line-height: 1.7; margin-bottom: 32px;">
+            "Thank you so much Tiju's Academy and the crew for helped me to won NCLEX RN in my very first attempt... Online classes, question discussions, doubts clearing sections, portal moreover their professional tutors were really assisted me...<br>So that I highly recommend Tiju's Academy, those who have any plan to do NCLEX...."
+          </p>
+          <div class="t-author" style="display: flex; align-items: center; width: 100%; margin-top: auto;">
+            <img src="https://ui-avatars.com/api/?name=parvathy+s&background=f59e0b&color=fff&size=56"
+              alt="parvathy s" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; margin-right: 16px;" />
+            <div style="text-align: left;">
+              <div class="t-name" style="font-size: 15px; font-weight: 700; color: #111827;">parvathy s</div>
+              <div style="font-size: 13px; color: #6b7280; margin-top: 2px;">NCLEX RN Aspirant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stakeholder Table -->
+  <section class="section section-gray">
+    <div class="container">
+      <h2 class="section-title">
+        A Catalyst for Your Global Nursing Success
+      </h2>
+      <div class="table-outer">
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th style="background: var(--white); color: var(--text)"><strong>Who You Are / Your Goal</strong></th>
+              <th><strong>What is Expected of You</strong></th>
+              <th class="col3">
+                <strong>How Tiju's Learning Enables You</strong>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>The Aspiring USRN</strong></td>
+              <td>
+                <ul>
+                  <li>Mastering complex clinical judgment for the NGN.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>CJ Forge:</strong> Sharpens your decision-making for real exam scenarios.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>The Working Professional</strong></td>
+              <td>
+                <ul>
+                  <li>Balancing a full-time hospital job with intense study.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>FlexiTrack 365:</strong> A 1-year flexible path that fits your shifts.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>The Global Candidate</strong></td>
+              <td>
+                <ul>
+                  <li>Communicating effectively in high-pressure US hospitals.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>C3 Loop:</strong> Turns textbook theory into real-world "patient thinking".</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>The Exam Candidate</strong></td>
+              <td>
+                <ul>
+                  <li>Handling top-level application questions with zero fear.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Apex Application:</strong> Special training to master the hardest NCLEX questions.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programme Highlights -->
+  <section class="section">
+    <div class="container">
+      <div style="margin: 0 auto;">
+        <h2 class="section-title" style="margin-bottom: 20px;">Programme Highlights</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 40px;">
+          
+          <div style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
+            <div style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #1e3a8a;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                <line x1="16" x2="16" y1="2" y2="6" />
+                <line x1="8" x2="8" y1="2" y2="6" />
+                <line x1="3" x2="21" y1="10" y2="10" />
+              </svg>
+            </div>
+            <p style="text-align: center; margin: 0; line-height: 1.6; font-size: 14px; color: #4b5563;">
+              <strong style="color: #111827; font-size: 15px; display: block; margin-bottom: 4px;">3-Month Intensive Path:</strong> 
+              A structured 12-week program that covers the entire NCSBN NCLEX-RN syllabus efficiently.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
+            <div style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #1e3a8a;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 9.9-1" />
+              </svg>
+            </div>
+            <p style="text-align: center; margin: 0; line-height: 1.6; font-size: 14px; color: #4b5563;">
+              <strong style="color: #111827; font-size: 15px; display: block; margin-bottom: 4px;">12 Months of Signature Access:</strong> 
+              Full access to the OmniAccess Hub for an entire year, including live sessions and recorded materials.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
+            <div style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #1e3a8a;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <p style="text-align: center; margin: 0; line-height: 1.6; font-size: 14px; color: #4b5563;">
+              <strong style="color: #111827; font-size: 15px; display: block; margin-bottom: 4px;">Free Career Consultation:</strong> 
+              Get a one-on-one session with our experts to map out your global nursing career path.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
+            <div style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #1e3a8a;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+            </div>
+            <p style="text-align: center; margin: 0; line-height: 1.6; font-size: 14px; color: #4b5563;">
+              <strong style="color: #111827; font-size: 15px; display: block; margin-bottom: 4px;">Certificate of Completion:</strong> 
+              Earn a recognized certificate from Tiju's Learning once you reach your exam-ready milestone.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty -->
+  <section class="section section-gray" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 class="section-title"
+          style="text-align: center; margin-bottom: 30px; font-family: 'GT Sectra Fine', Georgia, serif; color: #333; font-size: 32px;">
+          Programme Coordinator</h2>
+        <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1 1 320px; max-width: 320px; margin: 0 auto;">
+            <img src="ceo.jpg" alt="Deepthi Thomas"
+              style="width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; object-fit: cover; object-position: top center; display: block; margin: 0 auto; box-shadow: 0 10px 25px rgba(0,0,0,0.05); background-color: #fff;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <div class="fac-name" style="font-size: 20px; font-weight: bold; margin-bottom: 6px; color: #003b73;">
+              Deepthi Thomas</div>
+            <p class="fac-title" style="font-size: 14px; margin-bottom: 16px; color: #777;">
+              Co-Founder & Director, Tiju's Learning
+            </p>
+            <p class="fac-bio" style="font-size: 15px; line-height: 1.6; margin-bottom: 15px; color: #555;">
+              Deepthi Thomas is a passionate educator and visionary leader dedicated to helping nursing professionals
+              achieve their global career aspirations. As the Co-Founder and Director of Tiju's Learning, she has played
+              a key role in guiding and empowering thousands of students toward NCLEX-RN success. With extensive
+              experience in professional training, she brings a deep understanding of the challenges faced by nursing
+              aspirants. Her ability to simplify complex concepts and deliver them in a clear, practical, and
+              results-driven manner sets her apart.
+            </p>
+            <p class="fac-bio" id="moreInfoText"
+              style="display: none; font-size: 15px; line-height: 1.6; margin-bottom: 15px; color: #555;">
+              At the core of her approach is a strong commitment to student success, ensuring every learner gains
+              clarity, confidence, and the right guidance to excel in the NCLEX-RN and beyond. Through her leadership,
+              Tiju's Learning continues to shape globally competent nurses ready to build successful international
+              careers.
+            </p>
+            <a href="javascript:void(0);"
+              onclick="var moreText = document.getElementById('moreInfoText'); if (moreText.style.display === 'none') { moreText.style.display = 'block'; this.innerHTML = 'Less Info'; } else { moreText.style.display = 'none'; this.innerHTML = 'More Info'; }"
+              style="color: #0088cc; text-decoration: none; font-size: 14px; display: inline-block;">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programme Modules -->
+  <!-- <section class="section">
+    <div class="container">
+      <h2 class="section-title">Programme Modules</h2>
+      <div class="acc-list">
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">1</span>Module 1: Introduction to Executive
+            Presence<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Understand the concept of Executive Presence</li>
+              <li>
+                Key characteristics of senior executives with Executive
+                Presence
+              </li>
+              <li>
+                Importance of Executive Presence in organisational success
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">2</span>Module 2: Self-Awareness<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Assessing your current presence &amp; impact</li>
+              <li>Techniques to enhance self-awareness</li>
+              <li>Cultivating a growth mindset for personal development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">3</span>Module 3: Verbal &amp; Non-Verbal
+            Communication Skills<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Handling difficult conversations</li>
+              <li>Gestures, posture, and eye contact</li>
+              <li>Building rapport through nonverbal cues</li>
+              <li>Public speaking techniques</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">4</span>Module 4: Toolkit for Effective
+            Storytelling<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Managing presence in virtual settings</li>
+              <li>Effective storytelling &amp; narrative building</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">5</span>Module 5: Persuasion Techniques
+            &amp; Influencing Strategies<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Framework of persuasion</li>
+              <li>Building alliance &amp; coalitions</li>
+              <li>Navigating organisational politics</li>
+              <li>Influencing strategies</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">6</span>Module 6: Building Authentic
+            Connections<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Networking skills</li>
+              <li>
+                Relationship-building with peers, superiors &amp; subordinates
+              </li>
+              <li>Soliciting &amp; providing constructive feedback</li>
+              <li>Leveraging social capital</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">7</span>Module 7: Emotional Intelligence
+            &amp; Resilience<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Managing emotions under pressure</li>
+              <li>Building resilience</li>
+              <li>Empathy &amp; active listening</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">8</span>Module 8: Personal Branding &amp;
+            Reputation Management<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Crafting compelling narratives</li>
+              <li>Aligning personal values with organisational goals</li>
+              <li>Reflecting on personal growth</li>
+              <li>Handling feedback &amp; criticism</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">9</span>Module 9: Adaptive Behaviors<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Steering through change &amp; uncertainty</li>
+              <li>Agility &amp; flexibility in decision-making</li>
+              <li>Fostering collaboration &amp; trust</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">10</span>Module 10: Ethical
+            Perspectives<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Ethical dilemma and decision making</li>
+              <li>Role modelling integrity &amp; accountability</li>
+              <li>Creating an ethical organisational culture</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">11</span>Module 11: Executive Presence in
+            Cross-Cultural Contexts<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Cultural intelligence</li>
+              <li>Adapting communication styles</li>
+              <li>Global impact considerations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">12</span>Module 12: Stakeholder
+            Management<span class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <ul>
+              <li>Engaging with diverse stakeholders</li>
+              <li>Influencing without authority</li>
+              <li>Conflict resolution</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Certificate -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="cert-wrap" style="justify-content: center;">
+
+        <div class="cert-text" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <h2 class="cert-title">Programme Certificate</h2>
+          <img class="cert-img" src="crt.jpg" alt="Programme Certificate" data-pagespeed-url-hash="4245788582"
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this)" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Takeaways -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 24px;">Key Programme Takeaways</h2>
+        <ul class="ul-check" style="font-size: 16px; line-height: 1.6;">
+          <li>
+            <strong>You'll get</strong> the clinical judgment skills to handle complex exam scenarios with total
+            confidence.
+          </li>
+          <li>
+            <strong>You'll get</strong> real-time answers and expert support through our daily live connect sessions.
+          </li>
+          <li>
+            <strong>You'll get</strong> a filtered syllabus that saves you time by focusing strictly on high-yield
+            questions.
+          </li>
+          <li>
+            <strong>You'll get</strong> proven exam-core training that removes fear and builds a winning mindset.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- World-class Learning -->
+  <section class="section section-gray">
+    <div class="container">
+      <h2 class="section-title">
+        Master the Global Standard: Expert Training Meets Absolute Flexibility
+      </h2>
+      <div class="learning-row">
+        <div class="learn-item">
+          <img
+            src="expert_guidance.png"
+            alt="Globally Renowned Faculty" data-pagespeed-url-hash="4185631472"
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this)" />
+          <h4>Expert Guidance, Anywhere</h4>
+          <ul>
+            <li>
+              You’ll get direct access to international nursing specialists, meaning
+              you can master global standards without leaving your home or quitting your current role.
+            </li>
+
+          </ul>
+        </div>
+        <div class="learn-item">
+          <img
+            src="network_success.png"
+            alt="Cohort-Based Learning" data-pagespeed-url-hash="2130567814"
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this)" />
+          <h4>Network of Success</h4>
+          <ul>
+            <li>
+              Join a dedicated cohort of like-minded nurses so you can share real-world exam strategies and stay
+              motivated through the toughest parts of your journey
+            </li>
+
+          </ul>
+        </div>
+        <div class="learn-item">
+          <img
+            src="flexible_learning.png"
+            alt="Flexible Learning" data-pagespeed-url-hash="2928893883"
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this)" />
+          <h4>Your Future, Your Schedule</h4>
+          <ul>
+            <li>
+              Unlock the secret to stress-free prep with 24/7 access to recorded sessions, resulting in a cleared exam
+              and a secured future for your family in the USA or Canada.
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="acc-list">
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">1</span>How quickly can I clear the NCLEX-RN with this program?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              You'll get a result-oriented, 3-month roadmap designed to move you from preparation to licensure as fast
+              as possible, meaning you can start your global career months ahead of others.
+            </p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">2</span>I have a very busy hospital schedule; can I really manage this?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              Discover the secret to "invisible prep" with our FlexiTrack 365 portal. You'll get 24/7 access to all
+              sessions, so you can study during your breaks or commute without ever sacrificing your sleep or job.
+            </p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">3</span>What makes Tiju's Learning different from other coaching centers?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              You'll get more than just lectures; you get the CJ Forge and HYQ Matrix systems. Discover the secret to
+              "thinking like a USRN," which is the exact mindset needed to beat the NGN format.
+            </p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">4</span>Will I be able to handle the new NGN (Next Gen) exam format?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              Unlock total confidence with our specialized NGN modules. You'll get proven strategies to master complex
+              case studies, resulting in a passing score even on the most difficult application questions.
+            </p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">5</span>What if I feel lost or stuck on a clinical concept?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              You'll get direct, human-powered support through our Daily Live Connect sessions. Discover the relief of
+              getting your doubts cleared instantly by experts who care about your success.
+            </p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">6</span>Is my investment in this course safe if I don't pass?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              You'll get the security of 12-month signature access. Discover the peace of mind that comes with knowing
+              we stay with you until you are fully ready to walk into that exam hall and win.
+            </p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">7</span>Can this program help me settle in the USA, Canada, or Australia?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              You'll get a clear path to global nursing standards. Discover the deep benefit of a world-class license
+              that secures your family's financial future and provides the lifestyle you've always dreamed of.
+            </p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" onclick="tog(this)">
+            <span class="cnt-num">8</span>How do I know if I am eligible to start right now?<span
+              class="acc-arrow">▾</span>
+          </button>
+          <div class="acc-body">
+            <p>
+              Unlock your future today with a Free Career Consultation. You'll get a complete assessment of your
+              documents and eligibility, meaning you can start your journey with 100% clarity and zero risk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply Banner -->
+  <div class="apply-banner">
+    <div class="container">
+      <h2>Secure Your Global Future Today!</h2>
+      <p style="margin-bottom: 22px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+        <strong>Flexible Payment Options:</strong> You'll get the freedom to choose a payment plan that fits your
+        current income, <strong>meaning</strong> you can start learning now without financial stress.
+      </p>
+      <button class="btn-rev" onclick="openPopup()">
+        START YOUR APPLICATION NOW
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- <div class="container">
+      <img
+        src="https://images.ctfassets.net/wkud0epjdpn7/3X56dUIvUDq69UhwvpqNjg/766bb502aac7070997bb4294c587fda7/Emer__1_.png?fm=webp"
+        alt="Emeritus" data-pagespeed-url-hash="1692021953"
+        onload="pagespeed.CriticalImages.checkImageForCriticality(this)" />
+      <p>
+        Erulearning Solutions Private Limited (a company incorporated in
+        India) is a subsidiary of Eruditus Learning Solutions Pte Ltd (a
+        company incorporated in Singapore), and operates under the brand name
+        of 'Eruditus' and '<a href="https://emeritus.org/" target="_blank">Emeritus</a>'.
+      </p>
+    </div> -->
+  </footer>
+
+  <!-- Popup Form -->
+  <div class="popup-overlay" id="popupForm">
+    <div class="popup-box">
+      <button class="popup-close" onclick="closePopup()">&times;</button>
+      <div class="lead-form-box" style="box-shadow: none; padding: 0">
+        <h2>Get Your Free Guide</h2>
+        <div class="form-row">
+          <div class="form-field">
+            <label style="
+                  font-size: 11px;
+                  font-weight: 700;
+                  color: var(--text);
+                  display: block;
+                  margin-bottom: 3px;
+                ">First Name</label><input type="text" placeholder="e.g., Adam" />
+          </div>
+          <div class="form-field">
+            <label style="
+                  font-size: 11px;
+                  font-weight: 700;
+                  color: var(--text);
+                  display: block;
+                  margin-bottom: 3px;
+                ">Last Name</label><input type="text" placeholder="e.g., John" />
+          </div>
+        </div>
+        <label style="
+              font-size: 11px;
+              font-weight: 700;
+              color: var(--text);
+              display: block;
+              margin-bottom: 3px;
+            ">Phone Number</label>
+        <div class="form-row">
+          <div class="form-field">
+            <select>
+              <option value="+91" selected>🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+65">🇸🇬 +65</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <input type="tel" placeholder="Phone Number" />
+          </div>
+        </div>
+        <div class="form-field">
+          <label style="
+                font-size: 11px;
+                font-weight: 700;
+                color: var(--text);
+                display: block;
+                margin-bottom: 3px;
+              ">Email Address</label><input type="email" placeholder="e.g., name@email.com" />
+        </div>
+        <div class="form-field">
+          <label style="
+                font-size: 11px;
+                font-weight: 700;
+                color: var(--text);
+                display: block;
+                margin-bottom: 3px;
+              ">Current City</label><input type="text" placeholder="e.g., Kochi" />
+        </div>
+        <div class="form-field">
+          <label style="
+                font-size: 11px;
+                font-weight: 700;
+                color: var(--text);
+                display: block;
+                margin-bottom: 3px;
+              ">Best Time to Talk</label>
+          <select>
+            <option value="">- Select -</option>
+            <option>Morning (09–12)</option>
+            <option>Afternoon (12–4)</option>
+            <option>Evening (4–6)</option>
+            <option>Anytime</option>
+          </select>
+        </div>
+        <p class="form-consent">
+          <!-- By clicking the button below, you agree to receive communications
+          via Email/Call/WhatsApp/SMS from Tiju's Academy.
+          <a href="#">Privacy Policy</a> -->
+        </p>
+        <button class="btn-submit" onclick="downloadGuide()">GET FREE GUIDE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky bar -->
+  <div class="sticky-dl">
+    <button onclick="openPopup()">GET YOUR FREE GUIDE</button>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("hamburgerBtn").classList.toggle("active");
+      document.getElementById("mobileNav").classList.toggle("active");
+      document.body.style.overflow = document
+        .getElementById("mobileNav")
+        .classList.contains("active")
+        ? "hidden"
+        : "";
+    }
+    function openPopup() {
+      document.getElementById("popupForm").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+    function closePopup() {
+      document.getElementById("popupForm").classList.remove("active");
+      document.body.style.overflow = "";
+    }
+    document
+      .getElementById("popupForm")
+      .addEventListener("click", function (e) {
+        if (e.target === this) closePopup();
+      });
+    function downloadGuide() {
+      const link = document.createElement('a');
+      link.href = 'guide.pdf';
+      link.download = 'guide.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      closePopup();
+    }
+    function tog(btn) {
+      const body = btn.nextElementSibling;
+      const open = body.classList.contains("open");
+      btn
+        .closest(".acc-list")
+        .querySelectorAll(".acc-body.open")
+        .forEach((el) => el.classList.remove("open"));
+      btn
+        .closest(".acc-list")
+        .querySelectorAll(".acc-btn.open")
+        .forEach((el) => el.classList.remove("open"));
+      if (!open) {
+        body.classList.add("open");
+        btn.classList.add("open");
+      }
+    }
+  </script>
+  <script>
+    (function () {
+      function c() {
+        var b = a.contentDocument || a.contentWindow.document;
+        if (b) {
+          var d = b.createElement("script");
+          d.innerHTML =
+            "window.__CF$cv$params={r:'9f0c55704bb53411',t:'MTc3Njk0MTcwMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+          b.getElementsByTagName("head")[0].appendChild(d);
+        }
+      }
+      if (document.body) {
+        var a = document.createElement("iframe");
+        a.height = 1;
+        a.width = 1;
+        a.style.position = "absolute";
+        a.style.top = 0;
+        a.style.left = 0;
+        a.style.border = "none";
+        a.style.visibility = "hidden";
+        document.body.appendChild(a);
+        if ("loading" !== document.readyState) c();
+        else if (window.addEventListener)
+          document.addEventListener("DOMContentLoaded", c);
+        else {
+          var e = document.onreadystatechange || function () { };
+          document.onreadystatechange = function (b) {
+            e(b);
+            "loading" !== document.readyState &&
+              ((document.onreadystatechange = e), c());
+          };
+        }
+      }
+    })();
+  </script>
+</body>
+
+</html>
